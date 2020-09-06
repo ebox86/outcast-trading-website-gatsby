@@ -19,7 +19,7 @@ module.exports = {
         start_url: "/",
         background_color: theme.colors.white,
         theme_color: theme.colors.red[700],
-        icon: "static/favicon.ico",
+        icon: "static/favicon.svg",
       },
     },
     {
