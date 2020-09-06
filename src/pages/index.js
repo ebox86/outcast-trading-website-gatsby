@@ -24,7 +24,7 @@ export default () => {
           <img
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
             src={outcast_trading_logo}
-            alt="Gatsby and Tailwind CSS together"
+            alt="Outcast trading"
           />
 
         </div>
