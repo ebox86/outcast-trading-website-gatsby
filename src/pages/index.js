@@ -20,7 +20,7 @@ export default () => {
               A trading group with attitude.
             </p>
             <a
-            href="https://discord.gg/cpQnZk"
+            href="https://discord.gg/nasRw5f"
             className="mx-4 px-12 py-4  bg-red-700 text-white text-xs rounded shadow hover:bg-red-400"
             >
             Join on Discord
