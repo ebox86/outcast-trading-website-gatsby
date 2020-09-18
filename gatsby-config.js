@@ -6,7 +6,7 @@ const { theme } = resolveConfig(tailwindConfig)
 module.exports = {
   siteMetadata: {
     title: "Outcast Trading",
-    author: "evan kohout",
+    author: "ebox86#5335",
     description: "Homepage for Outcast Trading",
   },
   plugins: [
