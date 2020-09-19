@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-outcasttradingwebsit-dev-05252-authRole",
+      "UnauthRoleArn": "arn:aws:iam::768238290396:role/amplify-outcasttradingwebsit-dev-05252-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::768238290396:role/amplify-outcasttradingwebsit-dev-05252-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-outcasttradingwebsit-dev-05252-deployment",
+      "UnauthRoleName": "amplify-outcasttradingwebsit-dev-05252-unauthRole",
+      "StackName": "amplify-outcasttradingwebsit-dev-05252",
+      "StackId": "arn:aws:cloudformation:us-west-2:768238290396:stack/amplify-outcasttradingwebsit-dev-05252/f50bba80-f983-11ea-a81d-0ad5c43621b6",
+      "AmplifyAppId": "d26jb3x9jxr7wj"
+    },
+    "categories": {
+      "auth": {
+        "outcasttradingwebsit29b6ba76": {}
+      }
+    }
+  }
+}
