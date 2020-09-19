@@ -8,15 +8,15 @@ const Header = () => (
         <h1 className="max-w-4xl mx-auto"></h1>
         <Login/>
         {
-        isLoggedIn() && (
-          <p
-            onClick={
-              () => Auth.signOut()
-            }
-            style={styles.link}
-          >Sign Out</p>
-        )
-      }
+            isLoggedIn() && (
+            <p
+                onClick={
+                () => Auth.signOut()
+                }
+                style={styles.link}
+            >Sign Out</p>
+            )
+        }
     </header>
 )
 

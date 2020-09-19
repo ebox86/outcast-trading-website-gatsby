@@ -1,6 +1,19 @@
 import React, {Component} from "react"
 import { withOAuth } from "aws-amplify-react";
 import { Auth, Hub } from "aws-amplify"
+import Amplify from "aws-amplify"
+import awsConfig from "../aws-exports"
+
+const oauth = {
+    domain: 'outcasttrading.auth.us-west-2.amazoncognito.com',
+    scope: ['openid', 'profile'],
+    redirectSignIn: 'localhost:8000',
+    redirectSignOut: 'localhost:8000',
+    responseType: 'token'
+  };
+
+Amplify.configure(awsConfig);
+Auth.configure({ oauth });
 
 class Login extends Component {
     state = { user: null, customState: null };
