@@ -20,13 +20,16 @@ module.exports = {
         background_color: theme.colors.white,
         theme_color: theme.colors.red[700],
         icon: "static/favicon.svg",
+        },
       },
-    },
-    {
-      resolve: "gatsby-plugin-postcss",
-      options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      "gatsby-plugin-postcss",
+      {
+        resolve: "gatsby-plugin-purgecss",
+        options: {
+          tailwind: true,
+          purgeOnly: ["src/css/tailwind.css"],
+        },
       },
-    },
+      "gatsby-plugin-typescript"
   ],
 }

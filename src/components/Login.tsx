@@ -18,7 +18,7 @@ class Login extends Component {
             this.setState({ customState: data });
         }
       });
-  
+
       Auth.currentAuthenticatedUser()
         .then(user => this.setState({ user }))
         .catch(() => console.log("Not signed in"));
@@ -26,7 +26,6 @@ class Login extends Component {
   
     render() {
       const { user } = this.state;
-  
       return (
         <div className="Login">
           <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>Login with Discord</button>
