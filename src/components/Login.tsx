@@ -32,7 +32,7 @@ class Login extends Component {
           {user ? (
             <button onClick={() => Auth.signOut()}>Sign Out</button>
           ) : (
-            <button onClick={() => Auth.federatedSignIn()}>Login with Discord</button>
+            <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>Login with Discord</button>
           )}
         </div>
       );
