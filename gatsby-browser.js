@@ -4,10 +4,10 @@ import awsConfig from "./src/aws-exports"
 import { setUser } from "./src/utility/auth"
 
 const oauth = {
-    domain: process.env.COGNITO_AUTH_DOMAIN,
+    domain: process.env.GATSBY_COGNITO_AUTH_DOMAIN,
     scope: ['openid', 'profile'],
-    redirectSignIn: process.env.COGNITO_REDIRECT_SIGNIN,
-    redirectSignOut: process.env.COGNITO_REDIRECT_SIGNOUT,
+    redirectSignIn: process.env.GATSBY_COGNITO_REDIRECT_SIGNIN,
+    redirectSignOut: process.env.GATSBY_COGNITO_REDIRECT_SIGNOUT,
     responseType: 'token'
   };
 

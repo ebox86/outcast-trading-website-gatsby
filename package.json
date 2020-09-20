@@ -1,14 +1,13 @@
 {
-  "name": "gatsby-starter-tailwind-css",
+  "name": "outcast-trading-website-gatsby",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:melanienolan/gatsby-starter-tailwind-css.git",
-  "author": "Melanie Nolan <melly.nolan@gmail.com>",
+  "repository": "git@github.com:ebox86/outcast-trading-website-gatsby.git",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
