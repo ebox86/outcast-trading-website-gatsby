@@ -19,13 +19,9 @@ class Login extends Component {
         }
       });
 
-      Auth.currentAuthenticatedUser()
+      Auth.currentUserInfo()
         .then(user => this.setState({ user }))
         .catch(() => console.log("Not signed in"));
-
-      Auth.userAttributes(this.state.user.username)
-        .then(attr => console.log({ attr }))
-        .catch(() => console.log("not signed in"))
     }
   
     render() {
