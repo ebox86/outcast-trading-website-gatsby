@@ -21,9 +21,7 @@ class Login extends Component {
 
       Auth.currentAuthenticatedUser()
         .then(user => {
-          this.setState({ user })
-          console.log(this.state.user)
-          console.log(this.state.user.signInUserSession.idToken.payload)
+          this.setState({ user: user.signInUserSession.idToken.payload})
           })
         .catch(() => console.log("Not signed in"));
     }
