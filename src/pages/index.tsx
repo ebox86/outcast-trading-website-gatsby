@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import outcast_trading_logo from "../images/outcast-trading-logo.gif"
+import JoinServer from "../components/JoinServer"
+import outcast_trading_logo from "../images/outcast-trading-logo.gif";
 
 export default () => {
   return (
@@ -19,12 +20,7 @@ export default () => {
             <p className="px-4 mt-8 mb-8 text-lg text-gray-700 sm:mt-8">
               A trading group with attitude.
             </p>
-            <a
-            href="https://discord.gg/nasRw5f"
-            className="mx-4 px-12 py-4  bg-red-700 text-white text-xs rounded shadow hover:bg-red-400"
-            >
-            Join on Discord
-            </a>
+            <JoinServer/>
           </div>
         </div>
       </main>

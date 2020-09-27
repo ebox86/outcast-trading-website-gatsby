@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: "Outcast Trading",
     author: "ebox86#5335",
-    description: "Homepage for Outcast Trading",
+    description: "Outcast Trading - Traders with attitude",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useState } from "react"
+import React, { Component, useEffect, useState } from "react";
 import { withOAuth } from "aws-amplify-react";
-import { Auth, Hub } from "aws-amplify"
+import { Auth, Hub } from "aws-amplify";
 
 class Login extends Component {
     state = { user: null, customState: null };
@@ -30,18 +30,24 @@ class Login extends Component {
     render() {
       const { user } = this.state;
       return (
-        <div>
+        <div className="inline-block rounded-full bg-gray-600 pr-5 h-16 float-right">
           {user ? (
-            <><div className="inline-block rounded-full bg-gray-600 pr-5 h-16 line-height-username1">
+            <div>
               <img className="rounded-full float-left h-full" src={user.picture} /> 
-              <span className="ml-3 inline-block align-middle">
+              <span className="ml-5 inline-block align-middle">
                 {user.name}
                 <br/>
-                <button className="ml-3" onClick={() => Auth.signOut()}>Sign Out</button>
+                <button onClick={() => Auth.signOut()}>Sign Out</button>
               </span>
-            </div></>
+            </div>
           ) : (
-            <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>Login with Discord</button>
+            <div>
+              <span className="ml-5 inline-block pt-5">
+                <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>
+                  <span>Login with Discord</span>
+                  </button>
+              </span>
+            </div>
           )}
         </div>
       );
