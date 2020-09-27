@@ -33,7 +33,7 @@ class Login extends Component {
         <div className="inline-block rounded-full bg-gray-600 pr-5 h-16 float-right">
           {user ? (
             <div>
-              <img className="rounded-full float-left h-full" src={user.picture} /> 
+              <img className="rounded-full float-left h-16" src={user.picture} /> 
               <span className="ml-5 inline-block align-middle">
                 {user.name}
                 <br/>
