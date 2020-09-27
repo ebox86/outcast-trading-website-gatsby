@@ -15,15 +15,15 @@ Amplify.configure(awsConfig);
 Auth.configure({ oauth });
 
 export const onRouteUpdate = (state, page, pages) => {
-  Auth.currentAuthenticatedUser()
-    .then(user => {
-      const userInfo = {
-        ...user.attributes,
-        username: user.name
-      }
-      setUser(userInfo)
-    })
-    .catch(err => {
-      window.localStorage.setItem('gatsbyUser', null)
-    })
+  // Auth.currentAuthenticatedUser()
+  //   .then(user => {
+  //     const userInfo = {
+  //       ...user.attributes,
+  //       username: user.name
+  //     }
+  //     setUser(userInfo)
+  //   })
+  //   .catch(err => {
+  //     window.localStorage.setItem('gatsbyUser', null)
+  //   })
 }

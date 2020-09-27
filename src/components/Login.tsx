@@ -32,10 +32,14 @@ class Login extends Component {
       return (
         <div>
           {user ? (
-            <><div className="inline-block mb-6 rounded-full bg-gray-300 pr-5 h-16 line-height-username1">
-              <img className="rounded-full float-left h-full" src={user.picture} /> <span className="ml-3">{user.name}</span>
-            </div>
-              <button onClick={() => Auth.signOut()}>Sign Out</button></>
+            <><div className="inline-block rounded-full bg-gray-600 pr-5 h-16 line-height-username1">
+              <img className="rounded-full float-left h-full" src={user.picture} /> 
+              <span className="ml-3 inline-block align-middle">
+                {user.name}
+                <br/>
+                <button className="ml-3" onClick={() => Auth.signOut()}>Sign Out</button>
+              </span>
+            </div></>
           ) : (
             <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>Login with Discord</button>
           )}
