@@ -19,7 +19,7 @@ export const onRouteUpdate = (state, page, pages) => {
     .then(user => {
       const userInfo = {
         ...user.attributes,
-        username: user.username
+        username: user.name
       }
       setUser(userInfo)
     })

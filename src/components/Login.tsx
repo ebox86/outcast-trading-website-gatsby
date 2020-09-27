@@ -28,9 +28,11 @@ class Login extends Component {
       const { user } = this.state;
       return (
         <div>
-          <p>User: {user ? JSON.stringify(user.attributes) : 'None'}</p>
           {user ? (
-            <button onClick={() => Auth.signOut()}>Sign Out</button>
+            <><div className="inline-block mb-6 rounded-full bg-gray-300 pr-5 h-16 line-height-username1">
+              <img className="rounded-full float-left h-full" src={user.picture} /> <span className="ml-3">{user.name}</span>
+            </div>
+              <button onClick={() => Auth.signOut()}>Sign Out</button></>
           ) : (
             <button onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}>Login with Discord</button>
           )}
