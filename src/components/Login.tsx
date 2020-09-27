@@ -7,8 +7,6 @@ class Login extends Component {
   
     componentDidMount() {
       Hub.listen("auth", ({ payload: { event, data } }) => {
-        console.log(event)
-        console.log(data)
         switch (event) {
           case "signIn":
             this.setState({ user: data });
@@ -24,11 +22,14 @@ class Login extends Component {
       Auth.currentAuthenticatedUser()
         .then(user => this.setState({ user }))
         .catch(() => console.log("Not signed in"));
+
+      Auth.userAttributes(this.state.user.username)
+        .then(attr => console.log({ attr }))
+        .catch(() => console.log("not signed in"))
     }
   
     render() {
       const { user } = this.state;
-      console.log(this.state)
       return (
         <div>
           {user ? (
