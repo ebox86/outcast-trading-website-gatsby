@@ -1,7 +1,5 @@
 import React from "react"
-import { logout, isLoggedIn } from "../utility/auth"
 import Login from "../components/Login"
-import { Auth } from 'aws-amplify'
 
 const Header = () => (
     <header className="p-4 bg-red-700 text-white font-semibold">
