@@ -3,7 +3,31 @@
 This site is a simple homepage / landing page for the outcast trading group.
 
 
-## Setup
+## Prerequisites
+
+First, install the neccessary components to start developing with the website.
+
+```
+sudo npm install -g gatsby-cli
+sudo npm install -g @aws-amplify/cli
+```
+
+Retrieve your AWS IAM account credentials from the account administrator. Create a new IAM security credential pair for your IAM user. Take note of the access key and secret.
+
+Configure the amplify cli with the following commands:
+
+```
+amplify env checkout dev
+```
+
+Configure with the following parameters when prompted:
+
+* new environment? `N`
+* new user? `N`
+* existing user: (your iam access key):(your iam secret key)
+* region: `us-west-2`
+
+## Development
 
 Navigate to your project folder and start the development server:
 
@@ -14,16 +38,3 @@ gatsby develop
 
 The gatsby server will host the page locally at http://localhost:3000
 
-### Auth setup
-
-This project makes use of the AWS amplify framework, make sure you haev the amplify cli installed by running this command:
-
-```
-sudo npm install -g @aws-amplify/cli
-```
-
-Then run the following command to configure amploify for your environment / account.
-
-```
-amplify configure
-``` 
