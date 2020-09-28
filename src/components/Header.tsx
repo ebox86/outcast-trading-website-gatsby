@@ -7,16 +7,6 @@ const Header = () => (
     <header className="p-4 bg-red-700 text-white font-semibold">
         <h1 className="max-w-4xl mx-auto"></h1>
         <Login/>
-        {
-            isLoggedIn() && (
-            <p
-                onClick={
-                () => Auth.signOut()
-                }
-                style={styles.link}
-            >Sign Out</p>
-            )
-        }
     </header>
 )
 
