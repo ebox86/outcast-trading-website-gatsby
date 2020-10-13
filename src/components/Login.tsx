@@ -30,7 +30,7 @@ class Login extends Component {
     render() {
       const { user } = this.state;
       return (
-        <div className="inline-block rounded-full bg-gray-600 pr-5 h-16 float-right">
+        <div className="inline-block rounded-full bg-gray-600 pr-5 h-16">
           {user ? (
             <div>
               <img className="rounded-full float-left h-16" src={user.picture} /> 
