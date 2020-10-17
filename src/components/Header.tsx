@@ -8,11 +8,12 @@ interface MenuState {
 class Header extends Component<{}, MenuState> {
   constructor(props: any) {
     super(props);
-    this.state = { showMenu: false };
+    this.state = { 
+      showMenu: false 
+    };
   }
 
   toggleMenu = () => {
-    console.log(this.state.showMenu)
     this.setState({ showMenu: !this.state.showMenu})
   }
 
