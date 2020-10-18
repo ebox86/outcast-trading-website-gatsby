@@ -3,7 +3,7 @@ import { Icon, InlineIcon } from '@iconify/react';
 import discordIcon from '@iconify/icons-simple-icons/discord';
 import React from "react";
 
-export default class JoinServer extends Component {
+class JoinServer extends Component {
     handleClick(){
         window.location.assign('https://discord.gg/wsboutcasts')
     }
@@ -22,3 +22,5 @@ export default class JoinServer extends Component {
         )
     }
 }
+
+export default JoinServer

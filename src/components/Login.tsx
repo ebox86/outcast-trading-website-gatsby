@@ -40,18 +40,18 @@ class Login extends Component {
         <div>
         {user ? (
           <div className="relative">
-            <button onClick={this.toggleMenu} className="block h-8 w-8 rounded-full overflow-hidden border-2">
+            <button onClick={this.toggleMenu} className="block h-10 w-10 rounded-full overflow-hidden border-2 ">
               <img className="h-full w-full object-cover" src={user.picture} />
             </button>
             {showMenu &&
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
                 <a className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="#">Account settings</a>
-                <button className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" onClick={() => Auth.signOut()}>Sign Out</button>
+                <button className="block w-full px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" onClick={() => Auth.signOut()}>Sign Out</button>
               </div>
             }
           </div>
         ) : (
-          <div>
+          <div className="my-1 mx-2">
             <button 
               onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})} 
               className="bg-red-700 hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent rounded">

@@ -1,27 +1,20 @@
 import React, { Component } from "react"
 import Login from "../components/Login"
 
-interface MenuState {
-  showMenu: boolean
-}
-
-class Header extends Component<{}, MenuState> {
-  constructor(props: any) {
-    super(props);
-    this.state = { 
-      showMenu: false 
-    };
-  }
+class Header extends Component {
+  state = { 
+    showMenu: false 
+  };
 
   toggleMenu = () => {
     this.setState({ showMenu: !this.state.showMenu})
   }
 
   render() {
-    var menuState = this.state.showMenu
+    const menuState = this.state.showMenu
     return (
       <header className="bg-red-700 text-white font-semibold sm:flex sm:justify-between sm:px-4 sm:py-3">
-        <div className="flex items-center justify-between px-4 py-3 sm:p-0">
+        <div className="flex items-center justify-between px-4 py-2 sm:p-0 relative">
             <div>
               Outcast Trading
             </div>
@@ -37,9 +30,9 @@ class Header extends Component<{}, MenuState> {
               </button>
             </div>
         </div>
-        <div className={`${menuState ? `block px-2 py-2` : `hidden px-2 py-2`} sm:flex items-center`}>
-            <a href="#" className="hover:bg-red-500 rounded px-2 py-1 block text-white mx-2 sm:mt-0 sm:ml-2 font-semibold">Bots</a>
-            <a href="#" className="hover:bg-red-500 rounded px-2 py-1 block text-white mx-2 sm:mt-0 sm:ml-2 font-semibold">Podcast</a>
+        <div className={`${menuState ? `absolute bg-red-700 w-full block px-2 py-2` : `hidden px-2 py-2`} sm:flex items-center`}>
+            <a href="#" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:mt-0 sm:ml-2 font-semibold">Bots</a>
+            <a href="#" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:mt-0 sm:ml-2 font-semibold">Podcast</a>
             <Login/>
         </div>
       </header>
