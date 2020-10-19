@@ -40,7 +40,7 @@ class Login extends Component {
         <div className="relative">
         {user ? (
           <div>
-            <button onClick={this.toggleMenu} className="block h-10 w-10 rounded-full overflow-hidden border-2 ">
+            <button onClick={this.toggleMenu} className="block h-10 w-10 rounded-full overflow-hidden border-2 focus:outline-none">
               <img className="h-full w-full object-cover" src={user.picture} />
             </button>
             {showMenu &&
@@ -54,7 +54,7 @@ class Login extends Component {
           <div className="sm:my-1 mx-2">
             <button 
               onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})} 
-              className="bg-red-700 hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              className="bg-red-700 hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent focus:outline-none rounded">
               Login
             </button>
           </div>
