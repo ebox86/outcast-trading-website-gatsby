@@ -43,7 +43,7 @@ class Login extends Component {
             <button onClick={this.toggleMenu} className="block h-10 w-10 rounded-full overflow-hidden border-2 focus:outline-none">
               <img className="h-full w-full object-cover" src={user.picture} />
             </button>
-            {showMenu && <button onClick={this.toggleMenu} tabIndex={-1} className="fixed inset-0 h-full w-full cursor-default" ></button> }
+            {showMenu && <button onClick={this.toggleMenu} tabIndex={-1} className="fixed inset-0 h-full w-full cursor-default outline-none focus:outline-none" ></button> }
             {showMenu &&
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
                 <a className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white" href="#">Account settings</a>
@@ -54,7 +54,7 @@ class Login extends Component {
         ) : (
           <div className="sm:my-1 mx-2">
             <button 
-              onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})} 
+              onClick={() => Auth.federatedSignIn({customProvider: 'Discord'})}
               className="bg-red-700 hover:bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 hover:border-transparent focus:outline-none rounded">
               Login
             </button>
