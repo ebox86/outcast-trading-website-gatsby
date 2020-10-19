@@ -13,7 +13,7 @@ class Header extends Component {
   render() {
     const menuState = this.state.showMenu
     return (
-      <header className="bg-red-700 text-white font-semibold sm:flex sm:justify-between sm:px-4 sm:py-3">
+      <header className="bg-red-700 text-white h-20 font-semibold sm:flex sm:justify-between sm:px-4 sm:py-3">
         <div className="flex items-center justify-between px-4 py-2 sm:p-0 relative">
             <div>
               Outcast Trading
