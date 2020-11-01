@@ -1,6 +1,6 @@
 {
   "auth": {
-    "outcasttradingwebsit8d4a1389": {
+    "outcasttradingwebsitc8dce362": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

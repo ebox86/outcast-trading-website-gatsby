@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "outcasttradingwebsit8d4a1389_identitypool_8d4a1389",
+    "identityPoolName": "outcasttradingwebsitc8dce362_identitypool_c8dce362",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "outcas8d4a1389",
-    "userPoolName": "outcasttradingwebsit8d4a1389_userpool_8d4a1389",
+    "resourceNameTruncated": "outcasc8dce362",
+    "userPoolName": "outcasttradingwebsitc8dce362_userpool_c8dce362",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "outcas8d4a1389_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "outcasc8dce362_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "8d4a1389",
-    "resourceName": "outcasttradingwebsit8d4a1389",
+    "sharedId": "c8dce362",
+    "resourceName": "outcasttradingwebsitc8dce362",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,17 +46,17 @@
         ]
     },
     "useDefault": "defaultSocial",
+    "hostedUI": true,
     "triggers": "{}",
+    "hostedUIDomainName": "outcasttradingwebsitc8dce362-c8dce362",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.outcast.trading/\"],\"LogoutURLs\":[\"https://dev.outcast.trading/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "parentStack": {
         "Ref": "AWS::StackId"
     },
     "permissions": [],
-    "dependsOn": [],
-    "hostedUI": true,
-    "hostedUIDomainName": "outcasttradingwebsit657f9681-657f9681",
-    "authProvidersUserPool": [],
-    "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.outcast.trading/\"],\"LogoutURLs\":[\"https://dev.outcast.trading/\"]}"
+    "dependsOn": []
 }
