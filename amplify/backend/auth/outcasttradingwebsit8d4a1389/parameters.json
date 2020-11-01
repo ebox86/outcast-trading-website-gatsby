@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "outcasttradingwebsit29b6ba76_identitypool_29b6ba76",
+    "identityPoolName": "outcasttradingwebsit8d4a1389_identitypool_8d4a1389",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "outcas29b6ba76",
-    "userPoolName": "outcasttradingwebsit29b6ba76_userpool_29b6ba76",
+    "resourceNameTruncated": "outcas8d4a1389",
+    "userPoolName": "outcasttradingwebsit8d4a1389_userpool_8d4a1389",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,7 +18,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
+        "preferred_username"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "outcas29b6ba76_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "outcas8d4a1389_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "29b6ba76",
-    "resourceName": "outcasttradingwebsit29b6ba76",
+    "sharedId": "8d4a1389",
+    "resourceName": "outcasttradingwebsit8d4a1389",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,7 +46,12 @@
         ]
     },
     "useDefault": "default",
+    "triggers": "{}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
     "dependsOn": []
 }

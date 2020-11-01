@@ -13,7 +13,10 @@
     },
     "categories": {
       "auth": {
-        "outcasttradingwebsit29b6ba76": {}
+        "outcasttradingwebsit22b628d522b628d5": {
+          "hostedUIProviderCreds": "[]"
+        },
+        "outcasttradingwebsit8d4a1389": {}
       }
     }
   },
