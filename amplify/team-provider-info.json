@@ -13,7 +13,9 @@
     },
     "categories": {
       "auth": {
-        "outcasttradingwebsit8d4a1389": {}
+        "outcasttradingwebsit8d4a1389": {
+          "hostedUIProviderCreds": "[]"
+        }
       }
     }
   },
@@ -31,7 +33,9 @@
     },
     "categories": {
       "auth": {
-        "outcasttradingwebsit8d4a1389": {}
+        "outcasttradingwebsit8d4a1389": {
+          "hostedUIProviderCreds": "[]"
+        }
       }
     }
   }
