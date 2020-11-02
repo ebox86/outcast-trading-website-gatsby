@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "outcasttradingwebsitc8dce362_identitypool_c8dce362",
+    "identityPoolName": "outcasttradingwebsita3ef2420_identitypool_a3ef2420",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "outcasc8dce362",
-    "userPoolName": "outcasttradingwebsitc8dce362_userpool_c8dce362",
+    "resourceNameTruncated": "outcasa3ef2420",
+    "userPoolName": "outcasttradingwebsita3ef2420_userpool_a3ef2420",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "outcasc8dce362_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "outcasa3ef2420_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "c8dce362",
-    "resourceName": "outcasttradingwebsitc8dce362",
+    "sharedId": "a3ef2420",
+    "resourceName": "outcasttradingwebsita3ef2420",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,13 +45,8 @@
             "Arn"
         ]
     },
-    "useDefault": "defaultSocial",
-    "hostedUI": true,
+    "useDefault": "default",
     "triggers": "{}",
-    "hostedUIDomainName": "outcasttradingwebsitc8dce362-c8dce362",
-    "authProvidersUserPool": [],
-    "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.outcast.trading/\"],\"LogoutURLs\":[\"https://dev.outcast.trading/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "parentStack": {
