@@ -1,0 +1,16 @@
+{
+    "name": "Finbot",
+    "description": "Finance Bot for Discord",
+    "version": 0.1,
+    "documentation": {
+        "stocks": [
+
+        ],
+        "options": [
+
+        ],
+        "charts": [
+
+        ]
+    }
+}
