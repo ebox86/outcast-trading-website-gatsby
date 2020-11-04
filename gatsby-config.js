@@ -20,16 +20,33 @@ module.exports = {
         background_color: theme.colors.white,
         theme_color: theme.colors.red[700],
         icon: "static/favicon.svg",
-        },
       },
-      "gatsby-plugin-postcss",
-      {
-        resolve: "gatsby-plugin-purgecss",
-        options: {
-          tailwind: true,
-          purgeOnly: ["src/css/tailwind.css"],
-        },
+    },
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        tailwind: true,
+        purgeOnly: ["src/css/tailwind.css"],
       },
-      "gatsby-plugin-typescript"
+    },
+    "gatsby-plugin-typescript",
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: "src/data/",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "src/images/",
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 }

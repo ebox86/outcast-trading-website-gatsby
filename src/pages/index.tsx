@@ -1,18 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
 import JoinServer from "../components/JoinServer"
-import outcast_trading_logo from "../images/outcast-trading-logo.gif";
+import Logo from "../components/Logo";
 
-export default () => {
+const Homepage = () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
         <div className="sm:flex sm:flex-row sm:items-center">
-          <img
-              className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
-              src={outcast_trading_logo}
-              alt="Outcast trading"
-            />
+          <div style={{ width: `300px`}}>
+            <Logo/>
+          </div>
           <div className="sm:px-2">
             <h1 className="px-4 pt-5 text-2xl text-left text-red-700 font-bold sm:text-4xl">
               Outcast Trading
@@ -27,3 +25,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Homepage
