@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Login from "../components/Login"
+import { Link } from "gatsby"
 
 class Header extends Component {
   state = { 
@@ -16,7 +17,7 @@ class Header extends Component {
       <header className="bg-red-700 text-white font-semibold sm:flex sm:justify-between sm:px-4 sm:py-3">
         <div className="flex items-center justify-between px-4 py-2 sm:p-0 relative">
             <div>
-              Outcast Trading
+              <Link to="/">Outcast Trading</Link>
             </div>
             <div className="sm:hidden">
               <button onClick={this.toggleMenu} className="text-white focus:outline-none">
@@ -31,8 +32,8 @@ class Header extends Component {
             </div>
         </div>
         <div className={`${menuState ? `absolute bg-red-700 w-full block px-2 py-2 z-10` : `hidden px-2 py-0`} sm:flex items-center`}>
-            <a href="#" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:ml-2 font-semibold">Bots</a>
-            <a href="#" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:ml-2 font-semibold">Podcast</a>
+            <Link to="/bots" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:ml-2 font-semibold">Bots</Link>
+            <Link to="/podcast" className="hover:bg-red-500 rounded px-2 py-2 block text-white my-1 mx-2 sm:ml-2 font-semibold">Podcast</Link>
             <Login/>
         </div>
       </header>

@@ -12,7 +12,7 @@ const Homepage = () => {
             <Logo/>
           </div>
           <div className="sm:px-2">
-            <h1 className="px-4 pt-5 text-2xl text-left text-red-700 font-bold sm:text-4xl">
+            <h1 className="px-4 pt-5 text-2xl text-left text-red-700 font-extrabold sm:text-4xl tracking-tight">
               Outcast Trading
             </h1>
             <p className="px-4 mt-8 mb-8 text-lg text-gray-700 sm:mt-8">
