@@ -5,7 +5,7 @@ import React from "react";
 
 class JoinServer extends Component {
     handleClick(){
-        window.location.assign('https://discord.gg/wsboutcasts')
+        window.location.assign('https://discord.gg/outcast-trading')
     }
 
     render() {
